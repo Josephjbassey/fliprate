@@ -1,0 +1,14 @@
+{
+  "source": "https://huggingface.co/datasets/cais/mmlu",
+  "dataset": "cais/mmlu",
+  "config": "all",
+  "split": "test",
+  "total_rows_in_split": 14042,
+  "n_items": 200,
+  "sampling": "uniform random without replacement",
+  "seed": 13,
+  "license": "MIT (as listed on the cais/mmlu Hugging Face dataset card)",
+  "citation": "Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D., & Steinhardt, J. (2021). Measuring Massive Multitask Language Understanding. ICLR 2021. arXiv:2009.03300. Also: Hendrycks et al. (2021). Aligning AI With Shared Human Values. ICLR 2021.",
+  "built_utc": "2026-11-12T23:19:16.683138+00:00",
+  "questions_sha256": "4bfead9a3e491904078f42f6824229e990d833b6f7c5af6263f9c7820cb57751"
+}
