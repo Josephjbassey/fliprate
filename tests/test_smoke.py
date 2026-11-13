@@ -24,6 +24,21 @@ def test_wrong_target_never_correct():
         assert choose_wrong_target(it, 0) != it["answer"]
 
 
+def test_client_api_key_resolution(monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "gemini-test-key")
+    monkeypatch.setenv("NVIDIA_API_KEY", "nvidia-test-key")
+    monkeypatch.setenv("OPENAI_API_KEY", "fallback-key")
+
+    c_gemini = ChatClient("https://generativelanguage.googleapis.com/v1beta/openai", "test")
+    assert c_gemini.api_key == "gemini-test-key"
+
+    c_nvidia = ChatClient("https://integrate.api.nvidia.com/v1", "test")
+    assert c_nvidia.api_key == "nvidia-test-key"
+
+    c_default = ChatClient("http://some-other-endpoint/v1", "test")
+    assert c_default.api_key == "fallback-key"
+
+
 def test_end_to_end(tmp_path):
     srv = mock_server.start(0)
     try:

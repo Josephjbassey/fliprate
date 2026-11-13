@@ -5,3 +5,6 @@ __pycache__/
 results/runs/*.jsonl
 results/analysis/
 *.zip
+.env
+.env.*
+!.env.example
