@@ -42,6 +42,8 @@ class ChatClient:
                 api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENAI_API_KEY")
             elif "nvidia.com" in self.base_url:
                 api_key = os.environ.get("NVIDIA_API_KEY") or os.environ.get("OPENAI_API_KEY")
+            elif "groq.com" in self.base_url:
+                api_key = os.environ.get("GROQ_API_KEY") or os.environ.get("OPENAI_API_KEY")
             else:
                 api_key = os.environ.get("OPENAI_API_KEY")
         self.api_key = api_key or "not-needed"
