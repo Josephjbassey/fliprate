@@ -3,7 +3,7 @@
 **Apart AI x Epistemics Research Sprint, Track 1 (Nov 13-15, 2026).**
 Question: when a small language model is rebutted 1, 2, then 3 times (plain doubt -> appeal to authority -> fabricated evidence), how do its *answer* and *stated confidence* change, and can we separate **warranted updating** from **capitulation (sycophancy)**?
 
-> **Provenance:** all code in this repository was written during the sprint, starting 13 November 2026.
+> **Provenance:** the harness (`fliprate/` and `tests/`) and the question set were written on the night of 12 to 13 November 2026 and committed at 23:20 UTC on 12 November, before the sprint opened, and are marked preexisting. The model runs, strict re-parsing, analysis, and research report were produced during the sprint starting 13 November 2026.
 > **Mock-run outputs are NOT results.** The smoke test and `fliprate/mock_server.py` produce synthetic data
 > from a fake model. Only runs against real local models (files in `results/runs/`) count.
 

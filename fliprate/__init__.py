@@ -1,6 +1,7 @@
 """FlipRate: warranted updating vs capitulation in small LMs under escalating rebuttals.
 
-All code in this repository was written during the Apart AI x Epistemics Research
-Sprint, which started on 2026-11-13.
+The benchmark harness and question set were drafted immediately prior to the sprint
+(committed 23:20 UTC, 12 Nov 2026, marked preexisting). The model evaluations, strict
+re-parsing, analysis, and report were conducted during the Apart AI x Epistemics Sprint.
 """
 __version__ = "0.1.0"
